@@ -24,7 +24,7 @@ public class ChannelSetup {
     public MqttPahoClientFactory mqttClientFactory() {
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
         MqttConnectOptions options = new MqttConnectOptions();
-        options.setServerURIs(new String[] { "tcp://65.1.125.149:1883"});
+        options.setServerURIs(new String[] { "ip"});
         options.setCleanSession(true);
         factory.setConnectionOptions(options);
         return factory;
